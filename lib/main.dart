@@ -12,12 +12,18 @@ class XylophoneApp extends StatelessWidget {
      return  Expanded(
                 child: TextButton(
                   style: TextButton.styleFrom(
-                    primary: color,
+                    backgroundColor: color,
                   ),
                   onPressed: () {
                     playsound(soundnumber);
                   },
-                  child: Text('Click Me'),
+                  child: const Text('Click Me',
+                  style: TextStyle(
+                    fontSize: 15.0,
+                    color: Colors.black,
+                  ),
+                  ),
+                  
                 ),
               );
   }
